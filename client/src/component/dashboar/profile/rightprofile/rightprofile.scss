@@ -1,0 +1,55 @@
+.PostProfile{
+    width: 100%;
+    margin-bottom: 100px;
+    &__postimageIcon{
+        width: 60px;
+        height: 60px;
+        img{
+            margin-top: -180%;
+            height: 60px;
+            border-radius: 50%;
+            width: 60px;
+        }
+    }
+    &__namepost{
+        width: 100%;
+        margin-top: -21%;
+        margin-left: -30%;
+    }
+    &__time{
+        width: 100%;
+        margin-top: -1%;
+        margin-left: -29%;
+    }
+    &__detail{
+        width: 100%;
+        margin-top: 5%;
+        margin-left: -5%;
+        p{
+            text-align: left;
+              width: 90%;
+              word-break: break-word;
+              margin-left: 8%;
+        }
+    }
+    &__image{
+        width: 98%;
+        img{
+            width: 100%;
+        }
+    }
+    &__menu{
+        width: 100%;
+        margin-left: -5%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        &--button{
+            border: 0px;
+            background-color: white;
+            padding-left: 60px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 60px;
+        }
+    }
+}

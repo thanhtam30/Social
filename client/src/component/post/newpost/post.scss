@@ -1,0 +1,146 @@
+.new{
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Posts{
+    width: 100%;
+    background-color: #e9ecef73;
+    .leftposts{
+        width: 100%;
+        .Post{
+            width: 95%;
+            margin-left: 5%;
+            
+            .posts{
+                width: 100%;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                height: auto;
+                background-color: white;
+                border-radius: 15px;
+                position: relative;
+                .deletepost{
+                    margin-left: 500px;
+                    margin-top: -40px;
+                    opacity: 1;
+                    position: absolute;
+                 :hover{
+                     color: red($color: #000000)
+                 }   
+                }
+                .editpost{
+                    margin-left: 300px;
+                    margin-top: -32px;
+                }
+             
+                :hover .deletepost{
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .postsImage{
+                    width: 100%;
+                    img{
+                        height: 200px;
+                        width:95%;
+                    }
+                }
+                .postimageIcon{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    margin-left: -600px;
+                    /* padding-top: 10px; */
+                    margin-top: 10px;
+                }
+                .namepost{
+                    color: black;
+                  
+                    p{
+                        text-align: left;
+                        word-break: break-word;
+                        margin-top: -60px;
+                        margin-left: 110px;
+                    }
+                }
+                .time{
+                    color: black;
+                    margin-top: -20px;
+                    margin-left: -380px;;
+                }
+                .postsDetail{
+                    width: 100%;
+                    color: black;
+                    p{
+                        text-align: left;
+                        word-break: break-word;
+                        margin-top: 10px;
+                        margin-left: 35px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+                .menu{
+                    width: 100%;
+                    /* position: absolute; */
+                    /* margin-top: 220px; */
+                    margin-top: 20px;
+                   
+                  
+                    padding: 5px;
+                    .button{
+                        border: 0px;
+                        color: black;
+                        background-color: #ffffff;
+                        width: 150px;
+                        margin-left: 80px;
+                        
+                    }
+                  }
+            }
+
+            .commentprofile{
+                width: 100%;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                 .commentimageIcon{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    margin-left: -180px;
+                    margin-top: 10px;
+                }
+                .nameprofile{
+                  
+                  margin-left: 100px;
+                  margin-top: -40px;
+                  position: absolute;
+                }
+                .Commentprofile{
+                  width: 80%;
+              margin-left: 90px;
+              margin-top: -40px;
+              margin-bottom: 10px;
+              background-color: #e8e8e8;
+              border-radius: 30px;
+                  p{
+                    text-align: left;
+                    width: 90%;
+                    word-break: break-word;
+                    margin-left: 30px;
+                    /* margin-top: 10px; */
+                    margin-top: -10px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                  }
+                }
+                .timeprofile{
+                  color: black;
+                  margin-left: 100px;
+                  margin-top: -25px;
+                  position: absolute;
+                }
+               }
+        }
+    }
+}

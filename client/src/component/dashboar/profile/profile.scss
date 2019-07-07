@@ -1,0 +1,70 @@
+.profile{
+    margin-left: 5%;
+  width: 90%;
+  background-color: #ffffff;
+    position: absolute;
+  color: rgba(0, 0, 0, 0.65);
+  &__img{
+    img{
+        height: 300px;
+        width: 100%;
+    }
+    width: 100%;
+  }
+  &__imageprofile{
+      width: 100%;
+    img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-top: -10%;
+        margin-left: -78%;
+    }
+}
+&__profileLink{
+    width: 100%;
+    position: relative;
+    margin-left: 70%;
+    margin-bottom: -28px;
+    opacity: 0;
+}
+&:hover &__profileLink{
+    opacity: 1;
+}
+&__profileleft{
+    width: 100%;
+    &--profilefullName{
+        margin-left: 50%;
+        margin-top: -28%;
+        color: white;
+    }
+    &--emailprofile{
+        margin-left: 50%;
+        margin-top: -20%;
+        color: #242a2f;
+    }
+    &--Detail{
+        margin-left: 10%;
+        margin-top: 5px;
+        img{
+            width: 100px;
+            height: 100px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+       
+    }
+    
+    &--Imageprofile{
+        width: 100%;
+        margin-left: 12%;
+        margin-top: 10px;
+        img{
+            width: 125px;
+            height: 125px;
+            margin-left: -15px;
+            margin-top: 10px;
+        }
+    }
+}
+}

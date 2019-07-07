@@ -1,0 +1,38 @@
+.createprofile{
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 500px;
+    height: 500px;
+    border: 3px black solid;
+}
+.createprofile h3{
+    color: blue;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.formcreateprofile{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.formcreateprofile h4{
+    font-size: 30px;
+    
+}
+.formcreateprofile .form-control{
+    display: block;
+      width: 300px;
+      
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: black;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      margin-left: 150px;
+      margin-top: -40px;
+  }

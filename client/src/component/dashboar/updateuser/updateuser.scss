@@ -1,0 +1,32 @@
+.updateprofile{
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 5%;
+    &__title{
+        color: black;
+    font-size: 25px;
+    margin-left: -10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    &__name{
+        font-size: 15px;
+        color: black;
+        margin-top: 20px;
+    }
+    &__input{
+        width: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__date{
+        width: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: -9%;
+    }
+    &__button{
+        margin-left: 10px;
+    }
+}

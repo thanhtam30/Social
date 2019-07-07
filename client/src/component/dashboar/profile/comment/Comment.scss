@@ -1,0 +1,29 @@
+.comment{
+    width: 100%;
+    margin-top: 10px;
+    &__icon{
+        width: 60px;
+        margin-top: 60px;
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+    }
+    &__comment{
+        width: 80%;
+    margin-left: 12%;
+    margin-top: -9%;
+    background-color: rgba(0,0,0,.075);
+    border-radius: 15px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+        p{
+text-align: left;
+      word-break: break-word;
+      margin-left: 10px;
+        }
+
+    }
+}

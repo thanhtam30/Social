@@ -1,0 +1,87 @@
+.posts{
+  width: 100%;
+  margin-top: 10px;
+  position: relative;
+  &__icon{
+    width: 60px;
+    margin-left: 40px;
+    img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+}
+&:hover &__delete{
+  opacity: 1;
+}
+&__delete{
+ position: absolute;
+ margin-top: -7%;
+ opacity: 0;
+ margin-left: 70%;
+  color: #007bfd;
+ opacity: 0;
+}
+&:hover &__edit{
+  opacity: 1;
+}
+&__edit{
+ position: absolute;
+ margin-top: -6%;
+ opacity: 0;
+ margin-left: 78%;
+
+ opacity: 0;
+}
+&__name{
+  width: 100%;
+  margin-top: -8%;
+  margin-left: -29%;
+  &--ten{
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 39px;
+    margin-left: -80px;
+  }
+}
+&__time{
+  width: 100%;
+  margin-top: -2%;
+  margin-left: -28%;
+  
+}
+&__detail{
+  width: 100%;
+  margin-top: 5%;
+  margin-left: -3%;
+  
+  p{
+      text-align: left;
+        width: 85%;
+        word-break: break-word;
+        margin-left: 8%;
+  }
+}
+&__image{
+  width: 98%;
+  
+  img{
+      width: 90%;
+  }
+}
+&__menu{
+  
+  width: 100%;
+  margin-left: -5%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  &--button{
+      border: 0px;
+      background-color: #f5f6f8;
+      padding-left: 60px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 60px;
+  }
+}
+}

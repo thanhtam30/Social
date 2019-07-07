@@ -1,0 +1,34 @@
+.formeditpost{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+    &__Title{
+        color: black;
+        font-size: 40px;
+        margin-left: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__Detail{
+        color: black;
+        font-size: 20px;
+    }
+    &__Input{
+        width: 80%;
+    }
+    &__File{
+        width: 20%;
+        color: white;
+    }
+    &__button{
+        margin-left: 35%;
+        margin-top: 10px;
+    }
+    &__image{
+        width: 100%;
+        &--image{
+            margin-left: 35%;
+        }
+    }
+}
