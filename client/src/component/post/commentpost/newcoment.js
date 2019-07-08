@@ -9,6 +9,7 @@ function PostComment(props) {
   const [Comment, setComment] = useState("");
   const [errors, seterrors] = useState({});
   const id = props.user.user.id;
+  // const name=props.user.user.fullName
   const onSubmit = e => {
     e.preventDefault();
     const newComment = {
@@ -21,7 +22,7 @@ function PostComment(props) {
   useEffect(() => {
     seterrors(props.errors);
   }, [errors, props.errors]);
-
+console.log(props.user.user)
   return (
     <div className="postcomment">
       <div className="row">

@@ -33,16 +33,11 @@ var upload = multer({
   //     fileSize: 1024 * 1024
   // }
 });
-router.post("/signin", upload.single("Image"), (req, res) => {
+router.post("/signin",  (req, res) => {
   const { errors, isValid } = validatorsignin(req.body);
   if (!isValid) return res.status(400).json(errors);
   const { fullName, email, password } = req.body;
-  //check image
-  if (typeof req.file == "undefined") {
-    imagefile = "";
-  } else {
-    imagefile = req.file.filename;
-  }
+  
   User.findOne({ email }).then(user => {
     if (user) {
       if (user.email === email) {
@@ -53,8 +48,7 @@ router.post("/signin", upload.single("Image"), (req, res) => {
     const newUser = new User({
       fullName,
       email,
-      password,
-      Image: imagefile
+      password
     });
     bcrypt.genSalt(10, (err, salt) => {
       if (err) return res.status(400).json(err);

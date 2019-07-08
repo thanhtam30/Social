@@ -1,21 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import {updateImageUser,previewUser} from '../../actions/profileAction';
-import _ from 'lodash';
+// import _ from 'lodash';
 import { Form, Input } from "reactstrap";
 
 const UpdateImageUserProfile=(props)=>{
-    const [ Image] = useState([]);
+    // const [ Image] = useState('');
     const [file, setFile] = useState('');
-    useEffect(() => {
-        if (!_.isEmpty(props.profile.profile)) {
-          Image(props.profile.profile.Image);
-        }  
-      }, [props.profile.profile]);
-      
+    // useEffect(() => {
+    //     if (!_.isEmpty(props.profile.profile)) {
+    //       Image(props.profile.profile.Image);
+    //     }  
+    //   }, [props.profile.profile]);
+      const {previewUser}=props;
+      const id=props.match.params.id;
+      // useEffect(() => {
+      //   if (id) {
+      //     previewUser(id);
+      //   }
+        
+      // }, [id,previewUser]);
     useEffect(()=>{
-        props.previewUser(props.match.params.id)
-    },[props.previewUser])
+        previewUser(id)
+    },[id,previewUser])
   const   onSubmit=e=>{
         e.preventDefault();
         const formData=new FormData();

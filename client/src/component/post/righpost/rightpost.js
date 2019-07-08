@@ -3,9 +3,10 @@ import {connect} from 'react-redux';
 import {getAlluser} from '../../../actions/profileAction';
 import './rightpost.scss';
 const AllUser=(props)=>{
+    const {getAlluser}=props;
     useEffect(()=>{
-        props.getAlluser()
-    },[props.getAlluser])
+        getAlluser()
+    },[getAlluser])
     const profile=props.profile.profile
 return (
     <div>

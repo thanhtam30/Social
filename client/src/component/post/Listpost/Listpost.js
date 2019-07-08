@@ -27,9 +27,14 @@ const ListPost = props => {
     props.deletepost(id);
     toggle2();
   };
+
+  const { listpost } = props;
   useEffect(() => {
-    props.listpost();
-  }, [props.listpost]);
+  listpost && listpost();
+  }, [listpost]);
+  // useEffect(() => {
+  //   props.listpost();
+  // }, [props.listpost]);
   return (
     <div className="row">
       <div className="Posts">

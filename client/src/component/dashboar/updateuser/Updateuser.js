@@ -2,17 +2,16 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import {updateUser,previewUser} from '../../../actions/profileAction';
 import _ from 'lodash';
-import { Form, Input ,FormFeedback,Button} from "reactstrap";
+import { Form, Input ,Button} from "reactstrap";
 
-import { MuiPickersUtilsProvider,DatePicker,KeyboardDatePicker } from "@material-ui/pickers";
+import { MuiPickersUtilsProvider,DatePicker } from "@material-ui/pickers";
 
 import MomentUtils from '@date-io/moment';
-import TextField from '@material-ui/core/TextField';
+
 import './updateuser.scss'
 const UpdateUserProfile=(props)=>{
     const [Address, setAddress] = useState('');
     const [Phone, setPhone] = useState('');
-    // const [DOB, setDOB] = useState('');
     const [Status, setStatus] = useState('');
     const [DOB, setDOB] = useState(new Date());
 
@@ -25,15 +24,17 @@ const UpdateUserProfile=(props)=>{
         
 }
     }, [props.profile.profile]);
+    const {previewUser}=props;
+    const id=props.match.params.id;
+
     useEffect(()=>{
-        props.previewUser(props.match.params.id)
-    },[props.previewUser])
+        previewUser(id)
+    },[id,previewUser])
   const   onSubmit=e=>{
         e.preventDefault();
         const newform=({
             Address,Phone,DOB,Status
         })
-        
          props.updateUser(props.match.params.id,newform,props.history)
     }
     return (

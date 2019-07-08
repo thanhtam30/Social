@@ -11,6 +11,7 @@ const Editpost = props => {
   // const [Image, setImage] = useState([]);
   const [errors, seterrors] = useState({});
   const id = props.user.user.id;
+
   useEffect(() => {
     if (!_.isEmpty(props.post.posts)) {
       setDetail(props.post.posts.Detail);
@@ -37,9 +38,10 @@ const Editpost = props => {
       setfile(a);
     }
   };
+  const {geteditpost}=props;
   useEffect(() => {
-    props.geteditpost(props.match.params.id);
-  }, [props.geteditpost]);
+    geteditpost(id);
+  }, [id,geteditpost]);
 
   return (
     <div className='row'>

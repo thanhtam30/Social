@@ -8,32 +8,47 @@ import {Link} from 'react-router-dom';
 import './profile.scss'
 const DashBoar = props => {
   const { profile } = props.profile;
+  // const { listpost } = props;
+  // useEffect(() => {
+  // listpost && listpost();
+  // }, [listpost]);
+  const {getpostprofile,previewUser}=props;
+  const id=props.match.params.id;
   useEffect(() => {
-    if (props.match.params.id) {
-      props.getpostprofile(props.match.params.id);
+    if (id) {
+      getpostprofile(id);      
     }
-  }, [props.getpostprofile]);
+  }, [getpostprofile,id]);
   useEffect(() => {
-    if (props.match.params.id) {
-      props.previewUser(props.match.params.id);
-    }
-    
-  }, [props.previewUser]);
+      previewUser(id);
+  }, [id,previewUser]);
   const post=props.post.post
 
   return (
     <div className='row'>
       <div className='profile'>
-      <div className='profile__img'>
+      <div className='profile__img'>{}
       <img alt=''  src={"../upload/avatar/defaultBcg.jpeg"}/>
       </div>
         
         <div className='row'>
                   <div  className='profile__imageprofile'>
-                  <img
+                  {/* {profile.Image ?  <img
                   src={`../upload/user/${profile.Image}`}
                   alt=''
+                />:<img
+                  src='../upload/noimage/noimage.jpg'
+                  alt=''
+                />} */}
+                {(profile.Image) ?
+                  <img
+                  src={`../upload/user/${profile.Image[profile.Image.length-1]}`}
+                  alt=''
                 />
+                :   <img
+                  src={`../upload/noimage/noimage.jpg`}
+                  alt=''
+                /> }
                   </div>
 
                 </div>
